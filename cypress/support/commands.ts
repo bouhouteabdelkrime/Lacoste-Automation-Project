@@ -19,7 +19,6 @@ Cypress.Commands.add('acceptCookies', () => {
 
 Cypress.Commands.add('dismissGeoPopup', () => {
   cy.get('body').then(($body) => {
-    // Matches the "Welcome to Lacoste France/US" geo-redirect modal text.
     if ($body.text().match(/are you in france|welcome to lacoste/i)) {
       cy.get('.js-geolocation-stay').click({ force: true });
     }

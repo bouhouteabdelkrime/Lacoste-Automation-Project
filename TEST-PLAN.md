@@ -1,4 +1,4 @@
-# Test Plan — Lacoste Website
+# Test Plan : Lacoste Website
 
 Automated checks are marked **[automated]**. Remaining items are a prioritized
 backlog and have not been verified against the live storefront.

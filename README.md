@@ -1,4 +1,4 @@
-# Lacoste Automation Technical Test — Exercice 2
+# Lacoste Automation Technical Test : Exercice 2
 
 Cypress + TypeScript smoke tests for the Lacoste US and France storefronts.
 
@@ -45,11 +45,9 @@ the tests correctly fail rather than treating a blocked page as a pass.
 
 ## CI
 
-Tests run on pushes and pull requests to `main`, and can also be started
+Tests run on pushes and pull requests to `master`, and can also be started
 manually from the Actions tab. Screenshots and videos are uploaded as an
-artifact even when the run fails. This workspace has no Git repository
-metadata or remote, so a repository-specific link or Actions badge cannot be
-added until the project is published to GitHub.
+artifact even when the run fails.
 
 ## Known limitation : 403s in CI
  
