@@ -50,3 +50,20 @@ manually from the Actions tab. Screenshots and videos are uploaded as an
 artifact even when the run fails. This workspace has no Git repository
 metadata or remote, so a repository-specific link or Actions badge cannot be
 added until the project is published to GitHub.
+
+## Known limitation : 403s in CI
+ 
+The tests pass locally but can fail in GitHub Actions with a `403
+Forbidden` from `lacoste.com`. This isn't a bug in the tests, Lacoste's
+site runs behind bot protection (Akamai) that blocks requests from
+shared/datacenter IPs like GitHub-hosted runners, while a local/residential
+IP goes through fine.
+ 
+I tried spoofing a standard browser User-Agent in `cypress.config.ts` to
+get past it; the block persists, so it looks IP-based rather than
+header-based.
+ 
+In a real project this would be solved by running CI against a staging
+environment without that protection, which isn't available for this
+exercise. Running the suite locally, or against lacoste.com from a
+non-datacenter IP, demonstrates the tests work as intended.
