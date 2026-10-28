@@ -1,0 +1,15 @@
+{
+  "name": "lacoste-automation-test",
+  "version": "1.0.0",
+  "description": "Lacoste Automation Technical Test - Exercice 2",
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:us": "cypress run --env locale=us",
+    "test:fr": "cypress run --env locale=fr"
+  },
+  "devDependencies": {
+    "cypress": "^16.2.0",
+    "typescript": "^5.6.0"
+  }
+}
