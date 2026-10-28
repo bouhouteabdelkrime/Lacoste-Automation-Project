@@ -14,7 +14,6 @@ export default defineConfig({
       openMode: 0,
     },
     setupNodeEvents(on, config) {
-      config.expose = { locale: config.env.locale };
       return config;
     },
   },

@@ -5,8 +5,8 @@
   "scripts": {
     "test": "cypress run",
     "test:open": "cypress open",
-    "test:us": "cypress run --env locale=us",
-    "test:fr": "cypress run --env locale=fr"
+    "test:us": "cypress run --spec cypress/e2e/lacoste-us.cy.ts ",
+    "test:fr": "cypress run --spec cypress/e2e/lacoste-fr.cy.ts "
   },
   "devDependencies": {
     "cypress": "^16.2.0",

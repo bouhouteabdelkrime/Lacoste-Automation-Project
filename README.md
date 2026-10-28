@@ -28,16 +28,15 @@ npm run test:fr
 
 ## What's covered
 
-See [TEST-PLAN.md](./TEST-PLAN.md) for the implemented checks and prioritized
-backlog. The automated suite covers localized homepage content and currency,
+See [TEST-PLAN.md](./TEST-PLAN.md) for the implemented checks.
+The automated suite covers localized homepage content,
 logo navigation, one category route, and search input for both locales.
 
 The requested Google search was attempted in a browser, but the page load
 aborted in this environment. A clearly labeled skipped Cypress test records
 the intended Google query and result assertion. It remains skipped because
 Google's captcha, consent, and result markup make it unsuitable for reliable
-CI. The live Lacoste homepage paths verified here are `/us/` and `/fr/`;
-shorter paths redirect, and `/us/en/` and `/fr/fr/` return not-found pages.
+CI. The live Lacoste homepage paths verified here are `/us/` and `/fr/`.
 
 Lacoste may return bot protection or 403 responses to headless browsers or
 GitHub Actions IP ranges. A conventional Chrome user agent is configured, but

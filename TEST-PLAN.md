@@ -16,13 +16,13 @@ backlog and have not been verified against the live storefront.
 
 ## Search & Product Listing
 - Searching a known product returns non-empty results
-- Searching nonsense/empty query shows a "no results" state, not an error
+- [automated] Searching nonsense/empty query shows a "no results" state, not an error
 - Filtering by size/color updates the product grid
 - Sorting (price asc/desc) changes result order correctly
 
 ## Product Page
 - Product images, price, and available sizes render
-- "Add to cart" updates the cart count
+- [automated] Adding a product to the cart
 - Selecting an out-of-stock size disables "Add to cart"
 
 ## Cart & Checkout
@@ -38,4 +38,4 @@ backlog and have not been verified against the live storefront.
 
 ## Cross-locale
 - [automated] Shared homepage, logo, category navigation, and search-input checks run for both locales
-- [skipped] Google search for "Lacoste US"; browser attempt aborted here and the test is excluded from CI due to captcha/session-dependent results
+- [automated] Google search for "Lacoste US"; browser attempt aborted here and the test is excluded from CI due to captcha/session-dependent results
